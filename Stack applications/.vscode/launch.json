@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/DataSturcture/Stack(array_based)",
-      "program": "e:/DataSturcture/Stack(array_based)/build/Debug/outDebug",
+      "cwd": "e:/DataSturcture/Stack applications",
+      "program": "e:/DataSturcture/Stack applications/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

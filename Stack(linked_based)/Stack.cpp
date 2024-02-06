@@ -33,7 +33,7 @@ t Stack<t>::pop()
     t item = top->data; // store the value of the top in a variable
     top = top->next;    // make the next node the top
     delete temp;        // delete the old top
-    return item;        // return the value of the old top
+    return item;        // return the value of the old top     
     siz--;
 }
 
