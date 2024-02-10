@@ -10,7 +10,7 @@
 // 6- empty: to check if the list is empty.
 // 7- full: to check if the list is full.
 // 8- size: to get the size of the list.
-//The List can work as a stack or a queue or a normal list based on the way you use the insert and remove methods.
+// The List can work as a stack or a queue or a normal list based on the way you use the insert and remove methods.
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -33,9 +33,17 @@ public:
     List(int mx);
     List();
     ~List();
+    void push_back(t data);
+    void push_front(t data);
+    void pop_back();
+    void pop_front();
     int insert(int index, t element);
-    void remove(int index);
+    int erase(t value);
+    int erase_by_index(int index);
+
     void print();
+    void reverse();
+    void sort();
     int search(t key);
     void clear();
     bool empty();

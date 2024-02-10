@@ -37,9 +37,9 @@ void Khaltbeta_blsalsa()
     // l1.print();                // 10 20 100 30 40 50
     // cout << l1.size() << endl; // 6
 
-    // l1.remove(1);
-    // l1.remove(3);
-    // l1.print();                // 20 100 40 50
+    // l1.erase_by_index(1);
+    // l1.erase_by_index(3);
+    // l1.print();                 // 10 100 40 50
     // cout << l1.size() << endl; // 4
 
     // l1.clear();
@@ -51,15 +51,36 @@ void Khaltbeta_blsalsa()
     // l1.print();                // 8 88 888 8888
     // cout << l1.size() << endl; // 4
 
-    List<string> l2;
-    l2.insert(1, "Afsdf");
-    l2.insert(2, "Bbbcxb");
-    l2.insert(3, "Ccxv");
-    l2.insert(4, "Ddfg");
-    l2.print(); // Afsdf Bbbcxb Ccxv Ddfg
-    l2.insert(3, "inserted");
-    l2.print();                // Afsdf Bbbcxb 100 Ccxv Ddfg
+    List<char> l2;
+    l2.push_back('a');
+    l2.push_back('b');
+    l2.push_back('c');
+    l2.push_back('d');
+    l2.push_back('e');
+    l2.print();                // a b c d e
     cout << l2.size() << endl; // 5
+    l2.push_front('z');
+    l2.push_front('y');
+    l2.push_front('x');
+    l2.print(); // x y z a b c d e
+
+    l2.pop_back();
+    l2.print(); // x y z a b c d
+
+    l2.pop_front();
+    l2.print(); // y z a b c d
+
+    l2.reverse();
+    l2.print(); // d c b a z y
+
+    l2.sort();
+    l2.print(); // a b c d y z
+
+    l2.erase('c');
+    l2.print(); // a b d y z
+
+    l2.clear();
+    cout << l2.size() << endl; // 0
 }
 //==================================================Main..
 int main()
