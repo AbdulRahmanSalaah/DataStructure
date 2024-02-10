@@ -1,0 +1,83 @@
+//                        "بسم الله"
+
+//    اللهمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ عَدَدَ كَمَالِ اللهِ وَكَمَا يَلِيقُ بِكَمَالِهِ
+
+//==================================================include..
+#include <bits/stdc++.h>
+using namespace std;
+#include <algorithm>
+//==================================================Define..
+
+#define speedy                    \
+    ios_base::sync_with_stdio(0); \
+    cin.tie(0);                   \
+    cout.tie(0);
+#define ll long long
+#define fr1(n) for (ll i = 1; i <= n; ++i)
+#define fr(n) for (ll i = 0; i < n; ++i)
+#define rfr(n) for (long long i = n - 1; i >= 0; i--)
+#define frj(n) for (ll j = 0; j < n; ++j)
+#define frj1(n) for (ll j = 1; j <= n; ++j)
+
+/* -----------------------------Code Begins from here-------------------------------------------*/
+
+#include "List.cpp"
+void Khaltbeta_blsalsa()
+{
+    List<int> l;
+    l.push_back(1);
+    l.push_back(2);
+    l.push_back(3);
+    l.push_back(4);
+    l.push_back(5);
+
+    l.print();  // 1 2 3 4 5    
+
+    l.pop_back();
+    l.print(); // 1 2 3 4
+
+    l.pop_front();
+    l.print();  // 2 3 4
+
+    l.insert(2, 10);
+    l.print(); // 2 3 10 4
+
+    l.erase(10);
+    l.print(); // 2 3 4
+
+    l.erase_by_index(1);
+    l.print(); // 2 4 
+
+
+    l.push_back(9);
+    l.push_back(10);
+    l.push_back(11);
+    l.print(); // 2 4 9 10 11
+
+    l.reverse();    
+    l.print(); // 11 10 9 4 2
+
+    l.sort();
+    l.print(); // 2 4 9 10 11
+
+    cout<<l.size() <<" \n"; // 5
+
+
+    l.clear();
+    cout<<l.size() <<" \n"; // 0
+
+
+}
+//==================================================Main..
+int main()
+{
+
+    speedy
+        ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+
+        Khaltbeta_blsalsa();
+    }
+}
