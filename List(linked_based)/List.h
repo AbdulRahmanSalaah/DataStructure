@@ -37,7 +37,6 @@ private:
         Node *next;
     };
     Node *head;
-    Node *tail;
     int siz;
 
 public:
