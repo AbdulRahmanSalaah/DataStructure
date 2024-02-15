@@ -236,8 +236,8 @@ void Tree<t>::preorderTraversal(Node *node) // helper method to traverse the tre
     if (node != NULL)
     {
         cout << node->data << " ";
-        preorder(node->left);
-        preorder(node->right);
+        preorderTraversal(node->left);
+        preorderTraversal(node->right);
     }
 }
 
@@ -246,8 +246,8 @@ void Tree<t>::postorderTraversal(Node *node) // helper method to traverse the tr
 {
     if (node != NULL)
     {
-        postorder(node->left);
-        postorder(node->right);
+        postorderTraversal(node->left);
+        postorderTraversal(node->right);
         cout << node->data << " ";
     }
 }

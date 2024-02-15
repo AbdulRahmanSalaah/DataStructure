@@ -53,6 +53,7 @@ void Khaltbeta_blsalsa()
 
     t.clear();
     cout << t.size() << "\n"; // 0
+    
 }
 //==================================================Main..
 int main()
